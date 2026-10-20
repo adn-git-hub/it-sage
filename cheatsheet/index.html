@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Cheatsheet</title>
+    <style>
+        input, label, textarea{
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header class="primary">
@@ -41,10 +46,10 @@
         </ol>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam consequuntur ab molestiae ratione explicabo beatae delectus</p> <!--Start attribute controls list count at 5-->
         <ol start="5">
-            <li>Instruction 1</li> 
-            <li>Instruction 2</li>
-            <li>Instruction 3</li>
-            <li>Instruction 4</li>
+            <li>Instruction 5</li> 
+            <li>Instruction 6</li>
+            <li>Instruction 7</li>
+            <li>Instruction 8</li>
         </ol>
         <h3>Definition List</h3>
         <dl>
@@ -69,7 +74,39 @@
             <li><a href="mailto:email@email.com">Email Link</a></li>
         </ul>
     </section>
+    <section id="table">
+        <h2>Table</h2>
+        <!-- Remove Border attribute once you've added CSS -->
+        <table border="1">
+            <caption>Grocery List</caption>
+            <tr>
+                
+                <th scope="col">Item</th><th scope="col">Quantity</th><th scope="col">Cost</th>
+            </tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>
+            <tr>
+                <td>Jolt</td>
+                <td>6</td>
+                <td>.99</td>
+            </tr>
+        </table>
+    </section>
+    <section id="forms"> 
+        <form action="processing-script.php" method="get">
+            <fieldset>
+                <legend>Sample Form Elements</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname"/>
+                <label for="address">Address</label>
+                <textarea id="address" name="address"></textarea>
+            </fieldset>
+        </form>
 
+    </section>
     <footer class="primary">
         Footer
     </footer>
