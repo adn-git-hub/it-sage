@@ -23,9 +23,28 @@
         <h5>Heading 5</h5>
         <h6>Heading 6</h6>
     </section>
+    <section id="quote">
+        <h2>Quotes</h2>
+        <h3>Blockquote</h3>
+        <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa tempora necessitatibus nihil ad nobis? Dolor ad culpa quidem voluptatem magni officia quos a perspiciatis laboriosam! Ipsa velit eaque praesentium, veritatis obcaecati quidem maxime qui? Dolorem vero molestiae laborum<cite> Author and Origin</cite>.
+        </blockquote>
+        <h3>Inline Quote</h3>
+        <q>Lorem ipsum dolor</q> sit amet consectetur adipisicing elit. Laboriosam, natus aut libero repellendus dicta odit ex assumenda officiis perspiciatis dolore!
+    </section>
+    <section id="images">
+        <img src="assets/img/david-byrne.jpeg" alt="David Byrne" />
+    </section>
+
     <section id="text-elements">
         <h2>Text Elements</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore ullam consequuntur ab molestiae ratione explicabo beatae delectus facilis, eveniet odit sint quaerat veniam maxime itaque error temporibus voluptates laudantium doloremque.</p>
+        <p>Lorem ipsum dolor, sit <em>amet consectetur</em> adipisicing elit. <strong>Dolore ullam consequuntur</strong> ab molestiae ratione explicabo <del>beatae delectus facilis</del>, eveniet <mark>odit sint quaerat</mark> veniam maxime itaque error <sub>temporibus voluptates</sub> laudantium doloremque. <sup> aperiam.</sup></p>
+            <hr />
+            <address>
+                Thomas Wallace</br>
+                123 Street name </br>
+                Little Rock, AR 55555
+            </address>
+            <hr />
     </section>
     <section id="lists">
         <h2>Lists</h2>
@@ -103,6 +122,15 @@
                 <input type="text" id="fullname" name="fullname"/>
                 <label for="address">Address</label>
                 <textarea id="address" name="address"></textarea>
+                <label for="color">Favorite Color</label>
+                <select id="color" name="color">
+                    <option value="R">Red</option>
+                    <option value="G">Green</option>
+                    <option value="B">Blue</option>
+                    <option value="-" selected>Choose Color</option>
+
+                </select>
+                <input type="submit"/>
             </fieldset>
         </form>
 
